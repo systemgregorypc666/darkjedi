@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Jedi Search - System Gregory PC</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo-placeholder {
+            width: 250px;
+            height: 250px;
+            border: 2px solid #2a2a2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background: radial-gradient(circle, #1a1a1a 0%, #0a0a0a 100%);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+            transition: box-shadow 0.5s ease;
+        }
+
+        .logo-placeholder:hover {
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+            border-color: #444;
+        }
+
+        .logo-img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            letter-spacing: 4px;
+            color: #ff0000;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .search-box {
+            position: relative;
+            width: 100%;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 30px;
+            color: #fff;
+            outline: none;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff0000;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+            background-color: #222;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        button {
+            padding: 10px 25px;
+            margin: 5px;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            color: #aaa;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background-color: #2a2a2a;
+            color: #ff0000;
+            border-color: #ff0000;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 12px;
+            color: #444;
+        }
+
+        .licencia {
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-container">
+            <div class="logo-placeholder">
+                <!-- REEMPLAZA EL 'src' ABAJO CON EL LINK DE TU IMAGEN -->
+                <img src="https://via.placeholder.com/200/ff0000/ffffff?text=DARK+JEDI" alt="Logo Dark Jedi" class="logo-img">
+            </div>
+        </div>
+
+        <h1>Dark Jedi Search</h1>
+
+        <div class="search-box">
+            <form action="#">
+                <input type="text" placeholder="Explorar la galaxia de datos..." name="q" autocomplete="off">
+                <div class="buttons">
+                    <button type="submit">Buscar con el Lado Oscuro</button>
+                    <button type="button">Indexar Biotecnología</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="licencia">
+            Propiedad de System Gregory PC | Licencia Apache 2.0
+        </div>
+    </div>
+
+    <footer>
+        Infraestructura protegida por Cloudflare | Legado de Alicia
+    </footer>
+
+</body>
+</html>
