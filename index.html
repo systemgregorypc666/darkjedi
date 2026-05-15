@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -129,7 +128,7 @@
     <div class="container">
         <div class="logo-container">
             <div class="logo-placeholder">
-                <!-- REEMPLAZA EL 'src' ABAJO CON EL LINK DE TU IMAGEN -->
+                <!-- Tu imagen desde GitHub ya está vinculada aquí -->
                 <img src="https://raw.githubusercontent.com/systemgregorypc666/darkjedi/refs/heads/main/nube/jpg/x.jfif" alt="Logo Dark Jedi" class="logo-img">
             </div>
         </div>
@@ -155,5 +154,30 @@
         Infraestructura protegida por Cloudflare | Legado de Alicia
     </footer>
 
+    <script>
+        // Seleccionamos el formulario y la barra de texto del HTML
+        const formulario = document.querySelector('form');
+        const entradaBusqueda = document.querySelector('input[name="q"]');
+
+        // Escuchamos cuando presionas "Enter" o haces clic en el botón
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página se recargue de golpe
+            
+            const consulta = entradaBusqueda.value.trim();
+
+            if (consulta === "") {
+                alert("Introduce un término para que la fuerza de Dark Jedi busque.");
+                return;
+            }
+
+            // FASE 1 DE INDEPENDENCIA: Redirección inteligente
+            // Mientras programas tu propio rastreador en Python, este comando
+            // redirige la búsqueda de forma privada hacia Google
+            const urlDestino = "https://www.google.com/search?q=" + encodeURIComponent(consulta);
+            
+            // Abre el resultado en una pestaña nueva
+            window.open(urlDestino, '_blank');
+        });
+    </script>
 </body>
 </html>
